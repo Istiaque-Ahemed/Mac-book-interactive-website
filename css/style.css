@@ -1,0 +1,24 @@
+/*========= Google font ======== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');   
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.mac-area{
+    display: flex;
+}
+.mac-img img{
+    margin-left: 60px;
+}
+.mac-details{
+    margin-top: 55px;
+}
+.memory-btn{
+    margin-bottom: 60px;
+}
+.storage-btn{
+    margin-bottom: 60px;
+}
+.delivery-btn{
+    margin-bottom: 60px;
+}
