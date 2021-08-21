@@ -15,7 +15,7 @@
 
 <body>
     <!-- ======main start====== -->
-    <main>
+    <main class="">
         <div class="mac-area mt-5">
             <div class="mac-img  mt-5">
                 <img src="/images/mac.png" width="500px" alt="">
@@ -27,29 +27,53 @@
                     Magic Keyboard - US English</p>
                 <div class="memory-btn">
                     <span class="fw-bold">Memory</span><br>
-                    <button type="button" class=" btn btn-warning btn-outline-dark">8GB unified memory </button>
-                    <button type="button" class=" gap-4 btn btn-warning btn-outline-dark"> 16GB unified memory</button>
+                    <button type="button" id="memory-8-gb" class=" btn btn-warning btn-outline-dark">8GB unified memory </button>
+                    <button type="button" id="memory-16-gb" class=" gap-4 btn btn-warning btn-outline-dark"> 16GB unified
+                        memory</button>
                 </div>
                 <div class="storage-btn">
                     <span class="fw-bold">Storage</span><br>
-                    <button type="button" class="btn btn-warning btn-outline-dark">256GB SSD storage </button>
-                    <button type="button" class="btn btn-warning btn-outline-dark"> 512GB SSD storage</button>
-                    <button type="button" class="btn btn-warning btn-outline-dark"> 1TB SSD storage</button>
+                    <button type="button" id="storage-256gb-SSD" class="btn btn-warning btn-outline-dark">256GB SSD storage </button>
+                    <button type="button"id="storage-512gb-SSD" class="btn btn-warning btn-outline-dark"> 512GB SSD storage</button>
+                    <button type="button"id="storage-1tb-SSD" class="btn btn-warning btn-outline-dark"> 1TB SSD storage</button>
                 </div>
                 <div class="delivery-btn">
                     <span class="fw-bold">Choose your delivery option</span><br>
-                    <button type="button" class=" btn btn-warning btn-outline-dark">Friday 24 Aug FREE Prime Delivery </button>
-                    <button type="button" class=" gap-4 btn btn-warning btn-outline-dark">Friday 24 Aug Delivery Charg $20</button>
+                    <button type="button" id="free-delivery" class=" btn btn-warning btn-outline-dark">Friday 24 Aug FREE Prime Delivery
+                    </button>
+                    <button type="button" id="cost-delivery" class=" gap-4 btn btn-warning btn-outline-dark">Friday 24 Aug Delivery Charg
+                        $20</button>
                 </div>
                 <div class="price-area">
-                    <p class="fw-bold">Best Price <span class="ms-5 fw-bold price-spec">$1299</span></p>
-                    <hr width="190px">    
-                    <p class="fw-bold">Extra memory cost <span class="ms-3 fw-bold">$0</span></p>
+                    <p class="fw-bold">Best Price <span class=" fw-bold best-price-spec">$ <span id="fixed-price">1299</span></span></p>
 
+                    <hr width="240px">
 
+                    <p class="fw-bold">Extra Memory cost <span class="ms-5 fw-bold extra-price-spec"> $<span id="extra-memory">0</span></span></p>
+
+                    <hr width="240px">
+
+                    <p class="fw-bold">Extra Storage cost <span class=" fw-bold sto-price-spec">$ <span id="extra-storage">0</span></span></p>
+
+                    <hr width="240px">
+
+                    <p class="fw-bold">Delivery cost <span class="fw-bold del-price-spec">$ <span id="delivery">0</span></span></p>
+
+                    <hr width="250px" style="height: 2px;color: black;">
+
+                    <p class="fw-bold">Totle Price <span class="fw-bold del-price-spec">$<span id="totle-price">1299</span> </span></p>
                 </div>
-            </div>  
+                <div class="promo-area mt-5 mb-5">
+                    <div class="promo-code">
+                        <p id="promo-code-text" class="fw-bold">Add Promo code</p>
+                        <input type="text" placeholder="Use Promo" id="promo-Input">
+                        <button id="promo-btn">Apply</button>
+                    </div>
+                </div>
+            </div>
         </div>
+    <hr class="hr">
+        <h1 class="last-totle"> Totle $<span id="last-total" >1299</span></h1>
     </main>
 
     <!--====== javascript===== -->
