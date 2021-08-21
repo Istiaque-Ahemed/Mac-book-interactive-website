@@ -45,7 +45,7 @@ const secondDelivery = document.getElementById("cost-delivery").addEventListener
 //============== Promo Code function============
 
 document.getElementById('promo-btn').addEventListener('click', function () {
-   console.log('dddd');
+   
    const promoInput = document.getElementById('promo-Input');
    if (promoInput.value == "stevekaku") {
       const promoOut = document.getElementById('last-total');
