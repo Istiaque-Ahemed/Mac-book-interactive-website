@@ -1,3 +1,4 @@
+//=========== head function=========
 function getPrice(product, price) {
    const memory = document.getElementById(product);
    memory.innerText = price;
@@ -13,7 +14,10 @@ function calc() {
    const total = parseInt(fixedPrice) + parseInt(extraMemory) + parseInt(extraStorage) + parseInt(delivery)
    document.getElementById("totle-price").innerText = total;
    document.getElementById('last-total').innerText = total;
+
 }
+// -----------handle the all event -------------
+
 const firstMemory = document.getElementById("memory-8-gb").addEventListener("click", function () {
    getPrice("extra-memory", 0);
 })
@@ -37,6 +41,8 @@ const firstDelivery = document.getElementById("free-delivery").addEventListener(
 const secondDelivery = document.getElementById("cost-delivery").addEventListener("click", function () {
    getPrice("delivery", 20);
 })
+
+//============== Promo Code function============
 
 document.getElementById('promo-btn').addEventListener('click', function () {
    console.log('dddd');

@@ -4,6 +4,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/*============= mac image and configuration============== */
 .mac-area{
     display: flex;
 }
@@ -35,12 +36,14 @@ body{
 .input-from{
     width: 300px;
 }
+/*====== promo button ===== */
  #promo-btn{
     background-color: #f0ad4e;
     color: black;   
     border: none;
     border-radius: 10px;
     padding: 6px 20px 6px 20px;
+    transform: 0.4s;
  } 
 
 
